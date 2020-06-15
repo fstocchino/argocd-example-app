@@ -4,6 +4,7 @@ metadata:
   name: example-deploy
   labels:
     app: example-app
+  annotations:
 spec:
   selector:
     matchLabels:
@@ -43,4 +44,4 @@ spec:
           secretName: mysecret
       - name: config-volume
         configMap:
-          name: example-config 
+          name: example-config #name of our configmap object
