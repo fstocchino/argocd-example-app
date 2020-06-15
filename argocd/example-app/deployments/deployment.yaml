@@ -43,4 +43,4 @@ spec:
           secretName: mysecret
       - name: config-volume
         configMap:
-          name: example-config #name of our configmap object
+          name: example-config 
