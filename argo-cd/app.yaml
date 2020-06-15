@@ -2,13 +2,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: example-app
-  namespace: argo
+  namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/fstocchino/argocd-example-app.git
     targetRevision: HEAD
-    path: argo/example-app
+    path: example-app
     directory:
       recurse: true
   destination:
