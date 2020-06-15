@@ -1,0 +1,41 @@
+{
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "creationTimestamp": "2020-05-26T13:33:28Z",
+        "deletionTimestamp": "2020-06-15T08:21:58Z",
+        "name": "argocd",
+        "resourceVersion": "5146077",
+        "selfLink": "/api/v1/namespaces/argocd",
+        "uid": "4f0981c7-7340-4abd-9c70-c2273553723a"
+    },
+    "spec": {
+        "finalizers": []
+    },
+    "status": {
+        "conditions": [
+            {
+                "lastTransitionTime": "2020-06-15T08:22:03Z",
+                "message": "Discovery failed for some groups, 1 failing: unable to retrieve the complete list of server APIs: metrics.k8s.io/v1beta1: the server is currently unable to handle the request",
+                "reason": "DiscoveryFailed",
+                "status": "True",
+                "type": "NamespaceDeletionDiscoveryFailure"
+            },
+            {
+                "lastTransitionTime": "2020-06-15T08:22:04Z",
+                "message": "All legacy kube types successfully parsed",
+                "reason": "ParsedGroupVersions",
+                "status": "False",
+                "type": "NamespaceDeletionGroupVersionParsingFailure"
+            },
+            {
+                "lastTransitionTime": "2020-06-15T08:22:04Z",
+                "message": "All content successfully deleted",
+                "reason": "ContentDeleted",
+                "status": "False",
+                "type": "NamespaceDeletionContentFailure"
+            }
+        ],
+        "phase": "Terminating"
+    }
+}
